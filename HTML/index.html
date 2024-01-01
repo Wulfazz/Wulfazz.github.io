@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reborn Legacy</title>
     <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -13,37 +16,40 @@
     <!-- Header -->
     <header>
 
-        <!-- Navbar -->
+        <!-- Navbar : fixed pour être tout le temps sur la page avec le scrolling. Navigation sur la page et pour d'autres pages -->
         <nav>
 
             <!-- Logo -->
             <div class="logo">
                 <img src="../img/LogoReborn.png" alt="Logo Reborn Legacy">
             </div>
+
+            <!-- Navigation -->
+            <!-- Si il y a du temps, ajout d'une catégories (métier) pour prensenter le travail sur le serveur -->
             <div>
-                <!-- Navigation -->
-                <a href="index.html">Accueil</a>
-                <a href="#aPropos">A propos</a>
-                <a href="#groupes">Groupes</a>
-                <a href="#rejoindre">Rejoindre</a>
-                <a href="#streams">Streams</a>
-                <a href="#images">Images</a>
-                <a href="#votes">Votes</a>
+                <a href="index.html">ACCUEIL</a>
+                <a href="#aPropos">A PROPOS</a>
+                <a href="#groupes">GROUPES</a>
+                <a href="#rejoindre">REJOINDRE</a>
+                <a href="#streams">STREAMS</a>
+                <a href="#images">IMAGES</a>
+                <a href="#votes">VOTES</a>
             </div> 
         </nav>
     </header>
 
     <section id="video" class="customSection">
-        
         <video autoplay muted loop>
-            
-            <!-- Fond vidéo -->
+            <!-- Fond vidéo neige tombante : vidéo prise sur Reborn, sur le pont en direction de la ville -->
             <source src="../video/Neige.mp4" type="video/mp4">
-            
         </video>
-        
+        <div class="overlay">
+            <h2 class="titreParaph">Bienvenue sur Reborn Legacy</h2>
+            <p class="containParaph">Venez vivre une expérience immersive sur un serveur rp. 
+            <br>Vivez une double vie et perdez vous dans la ville de LOS SANTOS.</p>
+        </div>
     </section>
-
+    
     <section id="aPropos" class="customSection">
         <div class="">
 
