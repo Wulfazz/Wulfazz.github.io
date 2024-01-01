@@ -1,4 +1,4 @@
-/* CSS */
+
 * {
     margin: 0;
     padding: 0;
@@ -9,19 +9,26 @@ body {
     background-color: #f2f2f2;
     width: 100vw;
     height: 100vh;
-    margin: 0;
 }
 
-header {
-    background-color: #333333;
+nav {
+    position: fixed;
+    top: 0;
+    right: 0; /* Modifiez "left: 0;" à "right: 0;" pour aligner la navigation à droite */
+    width: 100%;
     color: white;
     padding: 10px;
     display: flex;
-    justify-content: space-between;
     align-items: center; 
-    width: 100%;
-    transition: background-color 0.3s;
     z-index: 1000;
+    margin-right: 10px;
+    justify-content: space-between;
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
 }
 
 .logo img {
@@ -31,10 +38,6 @@ header {
     margin: 10px;
 }
 
-nav {
-    display: flex; 
-}
-
 nav a {
     color: white;
     text-align: center;
@@ -42,6 +45,7 @@ nav a {
     padding: 15px 20px;
     text-decoration: none;
 }
+
 
 nav a:hover {
     background-color: #ddd;
@@ -53,7 +57,7 @@ nav a:hover {
 
 #video {
     background-color: #f9f9f9;
-    height: 60%;
+    height: 80%;
 
 }
 
@@ -61,8 +65,7 @@ video {
     width: 100%;
 }
 
-#aPropos {
-    background-image: url("../img/fondLegacy.jpg");
+.customSection{
     width: 100%;
     height: 135%; 
     background-size: cover;
@@ -74,41 +77,18 @@ video {
     text-align: center;
 }
 
+#aPropos {
+    background-image: url("../img/fondLegacy.jpg");
+    height: 100%;
+}
+
 #rejoindre {
     background-image: url("../img/Legacy1.png");
-    width: 100%;
     height: 70%; 
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    text-align: center;
 }
 
-#streams {
+#streams, #images {
     background-color: #00011f;
-    width: 100%;
-    height: 700px; 
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    text-align: center;
+    height: 70%; 
 }
 
-#images {
-    background-color: #00011f;
-    width: 100%;
-    height: 700px; 
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    text-align: center;
-}
