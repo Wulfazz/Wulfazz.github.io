@@ -84,8 +84,35 @@ video {
 #aPropos {
     background-image: url("../img/fondLegacy.jpg");
     height: 65%;
-    font-size: 2em;
+    font-size: 1.5em;
     text-align: right;
+}
+
+.btn{
+font-weight: 1em;
+font-size: 15px;
+color: #fff;
+background-color: #3d3d3daf;
+padding: 10px 30px;
+border: solid #00000060 2px;
+box-shadow: rgb(0, 0, 0) 0px 0px 9px 2px;
+border-radius: 15px;
+transition : 1000ms;
+transform: translateY(0);
+display: flex;
+flex-direction: row;
+align-items: center;
+cursor: pointer;
+}
+
+.btn:hover{
+
+transition : 1000ms;
+padding: 10px 50px;
+transform : translateY(-0px);
+background-color: #e0e0e0;
+color: #454545;
+border: solid 2px #000000;
 }
 
 #rejoindre {
