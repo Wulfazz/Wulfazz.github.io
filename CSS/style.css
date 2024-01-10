@@ -8,7 +8,7 @@
 
 body {
     background-color: #f2f2f2;
-    width: 99vw;
+    width: 100%;
     height: 100vh;
 }
 
@@ -41,7 +41,7 @@ nav {
 nav a {
     color: white;
     text-align: center;
-    font-size: 2em;
+    font-size: 1.5em;
     padding: 15px 20px;
     text-decoration: none;
     margin-right: 30px;
@@ -171,4 +171,17 @@ border: solid 2px #000000;
 
 .containParaph {
     opacity: 0.6;
+}
+
+.votes{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    background-image: url(../img/fondReborn.png);
 }
