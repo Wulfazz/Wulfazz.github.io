@@ -96,8 +96,6 @@ video {
     text-align: left;
 }
 
-
-
 .parent {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -120,7 +118,7 @@ video {
     height: 70%; 
 }
 
-button {
+.button {
     font-size:1.5em;
     color:#fff;
   width:20%;
@@ -200,5 +198,40 @@ button {
 }
 
 .votesPage:hover {
+    background:#000000
+  }
+
+  /* page groupe */
+
+  .sect {
+    background-color:#00011f; 
+    height: 100%;
+    color: white;
+  }
+
+  #groupe {
+    background-color:#00011f; 
+    height: 100%; 
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .card {
+    font-size:4em;
+    color:#fff;
+  width:10%;
+  height:15%;
+  border-width:1px;
+  border-color:#000000;
+  border-radius: 15px;
+  box-shadow:inset 0px 0px 15px 3px #232323;
+  text-shadow:inset 0px 1px 0px #000000;
+  background:#0000007c;
+  margin: 3%;
+  margin-top: 15%;
+  rotate: -90deg;
+  }
+
+  .card:hover {
     background:#000000
   }
