@@ -51,6 +51,7 @@ nav a {
 nav a:hover {
     background-color: #ddd;
     color: black;
+    border-radius: 15px;
 }
 
 
@@ -88,37 +89,14 @@ video {
     text-align: right;
 }
 
-.btn{
-font-weight: 1em;
-font-size: 15px;
-color: #fff;
-background-color: #3d3d3daf;
-padding: 10px 30px;
-border: solid #00000060 2px;
-box-shadow: rgb(0, 0, 0) 0px 0px 9px 2px;
-border-radius: 15px;
-transition : 1000ms;
-transform: translateY(0);
-display: flex;
-flex-direction: row;
-align-items: center;
-cursor: pointer;
-}
-
-.btn:hover{
-
-transition : 1000ms;
-padding: 10px 50px;
-transform : translateY(-0px);
-background-color: #e0e0e0;
-color: #454545;
-border: solid 2px #000000;
-}
-
 #rejoindre {
     background-image: url("../img/Legacy1.png");
     height: 65%; 
+    font-size: 1.5em;
+    text-align: left;
 }
+
+
 
 .parent {
     display: grid;
@@ -141,6 +119,24 @@ border: solid 2px #000000;
     background-color: #00011f;
     height: 70%; 
 }
+
+button {
+    font-size:1.5em;
+    color:#fff;
+  width:20%;
+  height:10%;
+  border-width:1px;
+  border-color:#000000;
+  border-radius: 15px;
+  box-shadow:inset 0px 0px 15px 3px #232323;
+  text-shadow:inset 0px 1px 0px #000000;
+  background:#0000007c;
+  margin: 15%;
+}
+
+.button:hover {
+    background:#000000
+  }
 
 /* Textes */
 
@@ -166,11 +162,12 @@ border: solid 2px #000000;
 }
 
 .titreParaph {
-    margin: 10px;
+    margin: 5%;
 }
 
 .containParaph {
     opacity: 0.6;
+    margin: 5%;
 }
 
 /* Page de votes */
@@ -190,8 +187,6 @@ border: solid 2px #000000;
 
 .votesPage{
     font-size:2em;
-    outline: none;
-    text-decoration: none;
     color:#fff;
   width:40%;
   height:7%;
