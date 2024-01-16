@@ -21,7 +21,7 @@ const imageContainer = document.getElementById('image-container');
     const nextButton = document.getElementById('next-btn');
 
     // Nombre d'images
-    const totalImages = 11;
+    const totalImages = 16;
     let currentIndex = 0;
 
     // Génération des éléments HTML pour chaque image
@@ -61,4 +61,4 @@ const imageContainer = document.getElementById('image-container');
     nextButton.addEventListener('click', nextImage);
 
     // Défilement automatique du carrousel
-    setInterval(nextImage, 4000); // Changez la valeur pour ajuster la vitesse du défilement
+    setInterval(nextImage, 5000); // Changez la valeur pour ajuster la vitesse du défilement

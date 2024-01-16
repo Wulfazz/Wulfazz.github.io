@@ -36,7 +36,13 @@ nav {
     max-width: 100%;
     max-height: 70px;
     border-radius: 15px;
-    margin: 25px;
+    margin: 0 25px 0 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
 }
 
 nav a {
@@ -115,7 +121,7 @@ video {
 
 #streams, #images {
     background-color: #00011f;
-    height: 90%; 
+    height: 92%; 
     font-size: 1.5em;
     text-align: left;
 }
@@ -145,8 +151,9 @@ video {
 #carousel-container {
     overflow: hidden;
     position: relative;
-    width: 50%; /* Ajustez la largeur selon vos besoins */
+    width: 50%; 
     margin: 0 auto;
+    border-radius: 15px;
 }
 
 #image-container {
@@ -157,6 +164,7 @@ video {
 .carousel-image {
     width: 100%;
     cursor: pointer;
+
 }
 
 #prev-btn,
@@ -167,8 +175,7 @@ video {
     background: none;
     border: none;
     cursor: pointer;
-    font-size: 18px;
-    color: white;
+
 }
 
 #prev-btn {
@@ -272,7 +279,7 @@ video {
   background:#0000007c;
   margin: 3%;
   margin-top: 15%;
-  rotate: -90deg;
+  transform: rotate(-90deg);
   }
 
   .card:hover {
