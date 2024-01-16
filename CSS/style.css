@@ -115,7 +115,7 @@ video {
 
 #streams, #images {
     background-color: #00011f;
-    height: 86%; 
+    height: 90%; 
     font-size: 1.5em;
     text-align: left;
 }
@@ -145,7 +145,7 @@ video {
 #carousel-container {
     overflow: hidden;
     position: relative;
-    width: 60%; /* Ajustez la largeur selon vos besoins */
+    width: 50%; /* Ajustez la largeur selon vos besoins */
     margin: 0 auto;
 }
 
@@ -157,6 +157,26 @@ video {
 .carousel-image {
     width: 100%;
     cursor: pointer;
+}
+
+#prev-btn,
+#next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+}
+
+#prev-btn {
+    left: 10px;
+}
+
+#next-btn {
+    right: 10px;
 }
 
 /* Textes */
