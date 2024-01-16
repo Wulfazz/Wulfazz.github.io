@@ -86,6 +86,7 @@ video {
     justify-content: center;
     color: white;
     text-align: center;
+    background-color: #00000041;
 }
 
 #aPropos {
@@ -221,6 +222,11 @@ video {
 .containParaph {
     opacity: 0.6;
     margin: 5%;
+}
+
+.infos {
+    background-color: #0000008f;
+    border-radius: 15px;
 }
 
 /* Page de votes */
