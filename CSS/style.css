@@ -146,6 +146,11 @@ video {
     background:#000000
   }
 
+.button a {
+    text-decoration: none; 
+    color: inherit; 
+}
+
 /* Carousel */
 
 #carousel-container {
