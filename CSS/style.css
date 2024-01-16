@@ -255,7 +255,7 @@ video {
   box-shadow:inset 0px 0px 15px 3px #232323;
   text-shadow:inset 0px 1px 0px #000000;
   background:#0000009f;
-
+  margin-bottom: -10%;
 }
 
 .votesPage:hover {
@@ -295,4 +295,51 @@ video {
 
   .card:hover {
     background:#000000
+  }
+
+  /* Page Events */
+
+  /* Fonds de page */
+
+  .customSection2 {
+    width: 100%;
+    height: 135%; 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    background-color: #000000;
+  }
+
+  /* Textes de page */
+  .textInfos {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    justify-content: center;
+    color: white;
+    text-align: left;
+    margin-top: 5%;
+    margin-left: 5%;
+    font-size: 1.7em;
+  }
+
+  .textInfos h2, .textInfos p {
+    margin: 10px;
+  }
+
+  .titreParaph2 {
+    margin: 5%;
+  }
+
+  .containParaph {
+    margin: 5%;
   }
