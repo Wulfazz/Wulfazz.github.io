@@ -115,7 +115,7 @@ video {
 
 #streams, #images {
     background-color: #00011f;
-    height: 70%; 
+    height: 86%; 
     font-size: 1.5em;
     text-align: left;
 }
@@ -139,6 +139,25 @@ video {
 .button:hover {
     background:#000000
   }
+
+/* Carousel */
+
+#carousel-container {
+    overflow: hidden;
+    position: relative;
+    width: 60%; /* Ajustez la largeur selon vos besoins */
+    margin: 0 auto;
+}
+
+#image-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-image {
+    width: 100%;
+    cursor: pointer;
+}
 
 /* Textes */
 
