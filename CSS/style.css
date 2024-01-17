@@ -36,7 +36,7 @@ nav {
     max-width: 100%;
     max-height: 70px;
     border-radius: 15px;
-    margin: 0 25px 0 0;
+    margin: 25%;
 }
 
 nav ul {
@@ -132,7 +132,7 @@ video {
 .button {
     font-size:1.5em;
     color:#fff;
-  width:20%;
+  width:25%;
   height:10%;
   border-width:1px;
   border-color:#000000;
@@ -302,7 +302,7 @@ video {
   /* Fonds de page */
 
   .customSection2 {
-    width: 100%;
+    width: 100vw;
     height: 135%; 
     background-size: cover;
     background-position: center;
@@ -311,10 +311,16 @@ video {
     justify-content: center;
     color: white;
     text-align: center;
-    background-color: #000000;
+    background-color: #00011f;
+  }
+
+  #presentationCards {
+    background-image: url(../img/Evenementsfond.png);
+    width: 100vw;
   }
 
   /* Textes de page */
+
   .textInfos {
     position: absolute;
     top: 0;
@@ -327,19 +333,23 @@ video {
     justify-content: center;
     color: white;
     text-align: left;
-    margin-top: 5%;
-    margin-left: 5%;
     font-size: 1.7em;
   }
 
   .textInfos h2, .textInfos p {
-    margin: 10px;
+    margin: 0px;
   }
 
   .titreParaph2 {
-    margin: 5%;
+    margin: 0;
   }
 
   .containParaph {
-    margin: 5%;
+    margin: 0;
+  }
+
+  /* Images */
+
+  .illustration {
+
   }
