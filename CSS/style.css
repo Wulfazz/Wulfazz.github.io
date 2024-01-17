@@ -221,7 +221,7 @@ video {
 
 .containParaph {
     opacity: 0.6;
-    margin: 5%;
+    margin: 10%;
 }
 
 .infos {
@@ -302,8 +302,8 @@ video {
   /* Fonds de page */
 
   .customSection2 {
-    width: 100vw;
-    height: 135%; 
+    width: 100%;
+    height: 100%; 
     background-size: cover;
     background-position: center;
     display: flex;
@@ -315,41 +315,36 @@ video {
   }
 
   #presentationCards {
-    background-image: url(../img/Evenementsfond.png);
-    width: 100vw;
-  }
-
-  /* Textes de page */
-
-  .textInfos {
-    position: absolute;
-    top: 0;
-    left: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(../img/Evenementsfond.png);
     width: 100%;
-    height: 100%;
+    opacity: 1;
+  }
+
+  /* card */
+
+  .jhlCard {
+    width: 250px;
+    height: 450px;
+    margin: 100px;  
+    border-radius: 10px; 
+    overflow: hidden; 
+    background-color: rgba(75, 75, 75, 0.8);
+}
+
+.jhlCard img {
+    width: 80%; 
+    height: 40%; 
+    object-fit: cover;
+    margin: 5%;
+    border-radius: 15px; 
+}
+
+.jhlCard .jhlCard-text {
+    padding: 10px;
+}
+
+.cardEvents {
     display: flex;
-    flex-direction: column;
-    align-items: right;
-    justify-content: center;
-    color: white;
-    text-align: left;
-    font-size: 1.7em;
-  }
+}
 
-  .textInfos h2, .textInfos p {
-    margin: 0px;
-  }
-
-  .titreParaph2 {
-    margin: 0;
-  }
-
-  .containParaph {
-    margin: 0;
-  }
-
-  /* Images */
-
-  .illustration {
-
-  }
+  
