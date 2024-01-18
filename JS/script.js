@@ -16,41 +16,31 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-    const imageContainer = document.getElementById("image-container");
-    const prevBtn = document.getElementById("prev-btn");
-    const nextBtn = document.getElementById("next-btn");
+    const thumbnailsContainer = document.getElementById("thumbnails-container");
+    const fullImageContainer = document.getElementById("full-image-container");
+    const fullImage = document.getElementById("full-image");
 
-    let currentIndex = 0;
-    let totalImages = 16;  // Remplacez par le nombre total d'images
-    let imagesPath = "../img/carousel/img";
+    const totalImages = 18;  // Remplacez par le nombre total d'images
+    let imagesPath = "../img/gallery/img";
 
-    // Génération des éléments HTML pour chaque image
+    // Génération des miniatures
     for (let i = 1; i <= totalImages; i++) {
-        const imgElement = document.createElement('div');
-        imgElement.style.backgroundImage = `url('${imagesPath + i}.png')`;
-        imgElement.className = 'carousel-image';
-        imgElement.addEventListener('click', () => showImage(i - 1));
-        imageContainer.appendChild(imgElement);
+        const thumbnail = document.createElement('img');
+        thumbnail.src = `${imagesPath + i}.png`;
+        thumbnail.alt = `Thumbnail ${i}`;
+        thumbnail.className = 'thumbnail-image';
+        thumbnail.addEventListener('click', () => showFullImage(i));
+        thumbnailsContainer.appendChild(thumbnail);
     }
 
-    function showImage(index) {
-        currentIndex = index;
-        const translateValue = -index * 100 + '%';
-        imageContainer.style.transform = `translateX(${translateValue})`;
+    function showFullImage(index) {
+        fullImage.src = `${imagesPath + index}.png`;
+        fullImageContainer.style.display = 'flex';
     }
 
-    function nextImage() {
-        currentIndex = (currentIndex + 1) % totalImages;
-        showImage(currentIndex);
+    fullImageContainer.addEventListener('click', hideFullImage);
+
+    function hideFullImage() {
+        fullImageContainer.style.display = 'none';
     }
-
-    function prevImage() {
-        currentIndex = (currentIndex - 1 + totalImages) % totalImages;
-        showImage(currentIndex);
-    }
-
-    prevBtn.addEventListener('click', prevImage);
-    nextBtn.addEventListener('click', nextImage);
-
-    showImage(currentIndex);
 });
