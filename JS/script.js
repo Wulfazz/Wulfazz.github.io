@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const fullImageContainer = document.getElementById("full-image-container");
     const fullImage = document.getElementById("full-image");
 
-    const totalImages = 18;  // Remplacez par le nombre total d'images
+    const totalImages = 18;  // Nombre d'images totales dans la gallery
     let imagesPath = "../img/gallery/img";
 
     // Génération des miniatures

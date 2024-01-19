@@ -136,8 +136,8 @@ video {
 /* Utilitaires */
 
 .button {
-    font-size:1.5em;
-    color:#fff;
+  font-size:1.5em;
+  color:#fff;
   width:25%;
   height:10%;
   border-width:1px;
@@ -280,7 +280,7 @@ video {
 
 .sect {
     background-color: #00011f;
-    height: 100vh;
+    height: 130vh;
     color: white;
     display: flex;
     flex-direction: column; 
