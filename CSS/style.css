@@ -361,6 +361,11 @@ video {
     margin-bottom: 2%;
 }
 
+.membres {
+    transform: rotate(-90deg);
+    margin: 2%;
+}
+
   /* Page Events */
 
   /* Fonds de page */
