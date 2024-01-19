@@ -280,23 +280,41 @@ video {
 
 .sect {
     background-color: #00011f;
-    height: 100%;
+    height: 100vh;
     color: white;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    text-align: left;
 }
 
 #groupe {
     background-color: #00011f;
-    height: 100%;
+    height: 90%;
     display: flex;
     justify-content: space-around;
 }
 
-.teamTexte
+.teamTexte {
+    padding: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 1.2em;
+}
 
-/* Styles pour les boutons de navigation inclinés à 90 degrés */
+.teamTexte h2 {
+    margin: 3%;
+}
+
+.teamTexte p{
+    opacity: 0.8;
+    margin: 3%;
+}
+
 .nav-button {
     transform: rotate(-90deg);
-    width: 100%;
+    width: 30%;
     height: 20%;
     margin-top: 20%;
     border: none;
@@ -333,6 +351,14 @@ video {
 
 #lost-btn {
     background-color: rgb(114, 0, 0);
+}
+
+.imgPres {
+    width: 65%;
+    height: 60%;
+    overflow: hidden;
+    border-radius: 15px;
+    margin-bottom: 2%;
 }
 
   /* Page Events */
