@@ -44,3 +44,40 @@ document.addEventListener("DOMContentLoaded", function () {
         fullImageContainer.style.display = 'none';
     }
 });
+
+// Add this script to your script.js or at the end of the body tag
+
+// When the DOM is fully loaded
+document.addEventListener("DOMContentLoaded", function() {
+    // Get the modal
+    var modal = document.getElementById("membreModal");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+
+    // Add event listeners to each .perso element
+    var persoElements = document.querySelectorAll('.perso');
+    persoElements.forEach(function(perso) {
+        perso.addEventListener('click', function() {
+            var persoName = perso.textContent || perso.innerText;
+            // Update modal content based on the clicked .perso
+            document.getElementById('membreInfo').innerText = "Information about " + persoName;
+            // Set image src if available
+            document.getElementById('membreImage').src = 'path/to/image/' + persoName.toLowerCase() + '.jpg'; // Adjust the path as needed
+            // Display the modal
+            modal.style.display = "block";
+        });
+    });
+});
