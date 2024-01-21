@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -58,6 +57,37 @@ nav a:hover {
     background-color: #ddd;
     color: black;
     border-radius: 15px;
+}
+
+.hamburger {
+    display: none;
+    font-size: 30px;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#nav-links {
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 800px) {
+    .hamburger {
+        display: block;
+    }
+
+    #nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: left;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
 }
 
 /* Fonds de sections */
@@ -280,7 +310,7 @@ video {
 
 .sect {
     background-color: #00011f;
-    height: 130vh;
+    height: 150vh;
     color: white;
     display: flex;
     flex-direction: column; 
@@ -359,6 +389,7 @@ video {
     overflow: hidden;
     border-radius: 15px;
     margin-bottom: 2%;
+    margin-top: 5%;
 }
 
 .membres {
@@ -410,10 +441,17 @@ video {
 }
 
 .perso {
-    display: inline-block; /* Affiche les éléments côte à côte */
-    margin: 5px; /* Espacement entre les éléments */
-    padding: 5px; /* Espace intérieur pour chaque élément */
-    /* Ajoutez d'autres styles ici si nécessaire */
+    display: inline-block;
+    margin: 20%;
+    padding: 2%; 
+}
+
+#membreImage {
+    width: 100%;       
+    height: auto;      
+    max-height: 500px;
+    object-fit: cover; 
+    object-position: top;
 }
 
   /* Page Events */
@@ -465,5 +503,3 @@ video {
 .cardEvents {
     display: flex;
 }
-
-  
