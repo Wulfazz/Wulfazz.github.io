@@ -1,10 +1,10 @@
 // JavaScript (script.js)
 document.addEventListener("DOMContentLoaded", function () {
-    var header = document.querySelector("header");
-    var videoSection = document.getElementById("video");
+    let header = document.querySelector("header");
+    let videoSection = document.getElementById("video");
 
     window.addEventListener("scroll", function () {
-        var scrollPosition = window.scrollY;
+        let scrollPosition = window.scrollY;
 
         // Si la position de défilement est au-dessus de la section vidéo, ajoute une classe, sinon, supprime la classe.
         if (scrollPosition > videoSection.offsetTop) {
@@ -16,12 +16,24 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Nav reponsive
-document.addEventListener("DOMContentLoaded", function() {
-    var hamburger = document.getElementById('hamburger');
-    var navLinks = document.getElementById('nav-links');
+document.addEventListener("DOMContentLoaded", function () {
+    let hamburger = document.getElementById('hamburger');
+    let navLinks = document.getElementById('menu');
 
-    hamburger.addEventListener('click', function() {
+    hamburger.addEventListener('click', function () {
         navLinks.style.display = navLinks.style.display === 'block' ? 'none' : 'block';
+        navLinks.style.transition = 'all 0.5s ease-in-out';
+        hamburger.style.display = hamburger.style.display === 'none' ? 'block' : 'none';
+    });
+
+    window.addEventListener('resize', function () {
+        if (window.innerWidth > 800) {
+            navLinks.style.display = 'flex'; // changez 'block' par 'flex'
+            hamburger.style.display = 'none';
+        } else {
+            navLinks.style.display = 'none';
+            hamburger.style.display = 'block';
+        }
     });
 });
 
@@ -57,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Données persos
-var infosPersonnages = {
+let infosPersonnages = {
 
     // Infos LSPD
     "Capitaine": {
@@ -197,25 +209,25 @@ var infosPersonnages = {
     },
 };
 
-document.addEventListener("DOMContentLoaded", function() {
-    var modal = document.getElementById("membreModal");
-    var span = document.getElementsByClassName("close")[0];
+document.addEventListener("DOMContentLoaded", function () {
+    let modal = document.getElementById("membreModal");
+    let span = document.getElementsByClassName("close")[0];
 
-    span.onclick = function() {
+    span.onclick = function () {
         modal.style.display = "none";
     }
 
-    window.onclick = function(event) {
+    window.onclick = function (event) {
         if (event.target == modal) {
             modal.style.display = "none";
         }
     }
 
-    var persoElements = document.querySelectorAll('.perso');
-    persoElements.forEach(function(perso) {
-        perso.addEventListener('click', function() {
-            var persoName = perso.textContent || perso.innerText;
-            var info = infosPersonnages[persoName];
+    let persoElements = document.querySelectorAll('.perso');
+    persoElements.forEach(function (perso) {
+        perso.addEventListener('click', function () {
+            let persoName = perso.textContent || perso.innerText;
+            let info = infosPersonnages[persoName];
 
             if (info) {
                 document.getElementById('membreInfo').innerText = "Informations sur " + info.nom + ": " + info.description;
